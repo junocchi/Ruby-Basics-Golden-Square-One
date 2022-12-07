@@ -9,7 +9,3 @@ class Present
     return @contents
   end
 end
-
-contents = Present.new
-puts contents.wrap(11)
-contents.unwrap(9)
