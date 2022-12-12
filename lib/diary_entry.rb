@@ -23,6 +23,10 @@ class DiaryEntry
                         # user can read per minute
     # Returns an integer representing an estimate of the reading time in minutes
     # for the contents at the given wpm.
+    text = Array.new(500, "bananas").join(" ")
+    num_of_words = text.split.length
+    wpm = num_of_words / 200
+    return wpm
   end
 
   def reading_chunk(wpm, minutes) # `wpm` is an integer representing the number

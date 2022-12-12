@@ -23,9 +23,14 @@ RSpec.describe DiaryEntry do
     end
   end
 
-  describe "#reading_time"
-    it "Returns reading_time" do
-
-
+  describe "#reading_time" do # test example 4
+    text = Array.new(200, "bananas").join(" ")
+    it "Returns number of minutes a person takes to read contents" do
+      diary_entry = DiaryEntry.new("my_title", text)
+      expect(diary_entry.reading_time(100)).to eq 2 # if the person reads 100 words per minute,
+      # should return 2 minutes, because my content (text) has 200 words
+    end
+  end
+# testar para ver o erro que vai aparecer. A intenção é ter um erro. next step: fazer o code mais básico possível para passar no teste 4
 
 end
