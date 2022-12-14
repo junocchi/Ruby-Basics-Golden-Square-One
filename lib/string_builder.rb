@@ -12,6 +12,6 @@ class StringBuilder
   end
 
   def output
-    return @str
+    puts @str
   end
 end

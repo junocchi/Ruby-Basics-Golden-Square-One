@@ -15,3 +15,19 @@ class Gratitudes
   end
 end
 
+#Alternative from the video
+# class Gratitudes
+#   def initialize
+#     @gratitudes = []
+#   end
+
+#   def add(gratitude)
+#     @gratitudes << gratitude
+#   end
+
+#   def format
+#     prefix = "Be grateful for: "
+#     formatted_gratitudes = @gratitudes.join(", ")
+#     return formatted + formatted_gratitudes
+#   end
+# end
